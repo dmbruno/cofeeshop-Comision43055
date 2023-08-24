@@ -25,6 +25,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     row-gap: 10px;
+
     .elemento1 {
         background-image: url("https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
         grid-column-start: 1;
@@ -37,11 +38,13 @@ body {
         box-shadow: 5px 5px 2px white;
         opacity: 0.7;
         height: 12.5rem;
+
         &:hover {
             opacity: 1;
             transition: 1s;
             height: 31.25rem;
         }
+
         h2 {
             margin-top: .9375rem;
             padding-top: 0%;
@@ -51,6 +54,7 @@ body {
             font-family: monoton;
             text-shadow: 1px 1px 2px;
         }
+
         div {
             ul {
                 li {
@@ -67,6 +71,7 @@ body {
     width: 100%;
     justify-content: space-between;
     flex-direction: column;
+
     ul {
         display: flex;
         gap: 15px;
@@ -79,6 +84,7 @@ body {
 .contenedorBoton {
     display: flex;
     justify-content: center;
+
     button {
         border-radius: 41px;
         background: #008040;
@@ -90,6 +96,7 @@ body {
         padding: .3125rem .9375rem;
         border: .1875rem;
         margin: .9375rem 0;
+
         &:hover {
             cursor: pointer;
             background-color: $color-hover-boton;
@@ -107,11 +114,13 @@ body {
     border-radius: .3125rem;
     opacity: 0.7;
     height: 12.5rem;
+
     &:hover {
         opacity: 1;
         transition: 1s;
         height: 31.25rem;
     }
+
     h2 {
         margin-top: .9375rem;
         text-align: center;
@@ -120,6 +129,7 @@ body {
         font-family: monoton;
         text-shadow: 1px 1px 2px;
     }
+
     h4 {
         margin-top: .9375rem;
         text-shadow: 1px 1px 2px;
@@ -127,6 +137,7 @@ body {
         font-size: 1.25rem;
         color: gray;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
         &:hover {
             background-color: gray;
             color: white;
@@ -137,7 +148,7 @@ body {
 
 .elemento3 {
     background-image: url("https://images.unsplash.com/photo-1556641134-7c568bb74f1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
-    grid-column-start: 1 ;
+    grid-column-start: 1;
     grid-column-end: 4;
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,11 +157,13 @@ body {
     box-shadow: 5px 5px 2px white;
     opacity: 0.7;
     height: 12.5rem;
+
     &:hover {
         opacity: 1;
         transition: 1s;
         height: 31.25rem;
     }
+
     h2 {
         margin-top: .9375rem;
         color: $color-logo;
@@ -159,6 +172,7 @@ body {
         font-family: monoton;
     }
 }
+
 /* iniciar sesion */
 .titulo-productos {
     padding: .625rem;
@@ -174,8 +188,10 @@ body {
         box-shadow: 6px 6px 6px #8d8db2,
             -6px -6px 6px #ffffff;
     }
+
     .boton-registro {
         text-align: center;
+
         button {
             border-radius: 41px;
             background: #008040;
@@ -187,6 +203,7 @@ body {
             padding: .3125rem .9375rem;
             border: .1875rem;
             margin: .9375rem 0;
+
             &:hover {
                 background-color: $color-hover-boton;
             }
@@ -202,11 +219,13 @@ body {
     padding: 1.25rem;
     padding-top: 1.875rem;
 }
+
 .descripcion {
     p {
         color: $color-letra;
         padding: .9375rem;
         opacity: 0.6;
+
         &:hover {
             opacity: 1;
             transition: 1s;
@@ -244,20 +263,25 @@ body {
     font-size: .625rem;
     border: 1px solid black;
     padding: 10px;
+
     span {
         font-family: monoton;
     }
+
     input {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+
     .boton-sus {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         h4 {
             font-family: monoton;
             font-size: 1.25rem;
         }
+
         button {
             border-radius: 41px;
             background: #008040;
@@ -270,12 +294,14 @@ body {
             padding: .3125rem .9375rem;
             border: .1875rem;
             margin: .9375rem 0;
+
             &:hover {
                 background-color: $color-hover-boton;
             }
         }
     }
 }
+
 .banner-registro {
     background-image: url(../assets/img/banner.jpg);
     display: flex;
@@ -285,15 +311,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+
     h2 {
         font-family: monoton;
         padding: .9375rem;
         text-align: center;
     }
+
     p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: gray;
         margin: .9375rem;
+
         &:hover {
             background-color: gray 0.9;
             color: white;
@@ -301,12 +330,14 @@ body {
         }
     }
 }
+
 .registro {
     h2 {
         color: $color-logo;
         text-shadow: none;
     }
 }
+
 /* productos */
 .titulo-productos {
     color: $color-logo;
@@ -334,7 +365,7 @@ body {
 .producto1 {
     background-image: url("https://images.unsplash.com/photo-1675958986180-52e8e6fe1539?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80");
     @include hongo(cover, no-repeat, 100%, 100%, 18.75rem, 15%);
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -347,9 +378,9 @@ body {
 
     button {
         border-radius: 41px;
-        background: #008040; 
+        background: #008040;
         box-shadow: 3px 3px 1px #00572c,
-                    -3px -3px 1px #00a954;
+            -3px -3px 1px #00a954;
         font-family: monoton;
         color: white;
         display: flex;

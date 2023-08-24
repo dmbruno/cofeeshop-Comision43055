@@ -6,8 +6,7 @@
 }
 
 
-  @mixin hongo($size, $repeat, $position, $width, $height, 
-  $border){  
+  @mixin hongo($size, $repeat, $position, $width, $height, $border){  
 background-size: $size;
 background-repeat: $repeat;
 background-position: $position;
