@@ -1,4 +1,4 @@
-$color-footer-nav: rgba(97, 15, 15, 0.639);
+$color-footer-nav: rgba(0, 0, 255, 0.257);
 $color-letra: rgba(0, 0, 0, 0.843);
 $color-boton: rgba(74, 88, 48, 0.899);
 $color-hover-boton: rgba(255, 166, 0, 0.824);
@@ -9,9 +9,7 @@ $color-letra-blanca: white;
 @import "./base/mixins";
 @import "./base/header";
 @import "./base/body";
-
 @import "./base/footer";
-
 @import "./MQueries/mediasq";
 
 

@@ -17,7 +17,7 @@ body {
   align-items: center; }
 
 .conteiner {
-  background-color: rgba(97, 15, 15, 0.639);
+  background-color: rgba(0, 0, 255, 0.257);
   display: flex;
   justify-content: space-between;
   padding: .9375rem; }
@@ -421,7 +421,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: auto;
-  background-color: rgba(97, 15, 15, 0.639); }
+  background-color: rgba(0, 0, 255, 0.257); }
   .contenedorFooter h3 {
     font-size: .9375rem;
     color: rgba(0, 0, 0, 0.843);
@@ -466,7 +466,7 @@ body {
 
 @media (max-width: 46.0625rem) {
   .conteiner {
-    background-color: rgba(97, 15, 15, 0.639);
+    background-color: rgba(0, 0, 255, 0.257);
     display: flex;
     justify-content: space-between;
     margin-left: 0; }
@@ -555,7 +555,7 @@ body {
   .direcciones ul li {
     font-size: .9375rem; }
   .conteiner {
-    background-color: rgba(97, 15, 15, 0.639);
+    background-color: rgba(0, 0, 255, 0.257);
     display: flex;
     justify-content: center; }
   .clase-grid {
