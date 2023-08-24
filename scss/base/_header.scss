@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: monoton;
+    src: url(/assets/tipografias/Monoton-Regular.ttf);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home2{
+    @extend .home;
+}
+
+.conteiner {
+    background-color: $color-footer-nav;
+    display: flex;
+    justify-content: space-between;
+    padding: .9375rem;
+}
+
+    section {
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                font-family: monoton;
+                color: $color-letra;
+            }
+        }
+    }
+    .home:hover{
+        transform: scale(1.2);
+        transition: 1s;
+    }
+
+
+.navbar {
+    gap: .9375rem;
+    li {
+        list-style: none;
+        &:hover {
+            transform: scale(1.2);
+            transition: 1s;
+        }
+        a {
+            font-family: monoton;
+            text-decoration: none;
+            color: $color-letra;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@mixin diego($border, $padding, $p-top, $back-color){
+    border-radius: $border;
+    padding: $padding ;
+    padding-top: $p-top ;
+    background-color: $back-color;
+}
+
+
+  @mixin hongo($size, $repeat, $position, $width, $height, 
+  $border){  
+background-size: $size;
+background-repeat: $repeat;
+background-position: $position;
+width: $width;
+height: $height;
+border-radius: $border;
+  } 

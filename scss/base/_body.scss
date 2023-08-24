@@ -1,0 +1,460 @@
+body {
+
+    background-image: url(../assets/img/fondo-trama.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.logo {
+    h1 {
+        font-family: monoton;
+        font-size: 2.5em;
+        text-align: center;
+        padding: .9375rem;
+        color: orange;
+        margin-top: .9375rem;
+    }
+}
+
+.grid-index {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    row-gap: 10px;
+    .elemento1 {
+        background-image: url("https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-size: cover;
+        padding: .625rem;
+        display: flex;
+        border-radius: .3125rem;
+        background-position: 0% 50%;
+        box-shadow: 5px 5px 2px white;
+        opacity: 0.7;
+        height: 12.5rem;
+        &:hover {
+            opacity: 1;
+            transition: 1s;
+            height: 31.25rem;
+        }
+        h2 {
+            margin-top: .9375rem;
+            padding-top: 0%;
+            font-size: 2.1875rem;
+            text-align: center;
+            color: $color-logo;
+            font-family: monoton;
+            text-shadow: 1px 1px 2px;
+        }
+        div {
+            ul {
+                li {
+                    list-style: none;
+                    color: orange;
+                }
+            }
+        }
+    }
+}
+
+.tiendas {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    ul {
+        display: flex;
+        gap: 15px;
+        justify-self: flex-end;
+        font-size: 1.25rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+.contenedorBoton {
+    display: flex;
+    justify-content: center;
+    button {
+        border-radius: 41px;
+        background: #008040;
+        box-shadow: 3px 3px 1px #00572c,
+            -3px -3px 1px #00a954;
+        font-family: monoton;
+        display: flex;
+        justify-content: center;
+        padding: .3125rem .9375rem;
+        border: .1875rem;
+        margin: .9375rem 0;
+        &:hover {
+            cursor: pointer;
+            background-color: $color-hover-boton;
+        }
+    }
+}
+
+.elemento2 {
+    background-image: url("https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNob3B8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+    box-shadow: 5px 5px 2px white;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .3125rem;
+    opacity: 0.7;
+    height: 12.5rem;
+    &:hover {
+        opacity: 1;
+        transition: 1s;
+        height: 31.25rem;
+    }
+    h2 {
+        margin-top: .9375rem;
+        text-align: center;
+        color: $color-logo;
+        font-size: 2em;
+        font-family: monoton;
+        text-shadow: 1px 1px 2px;
+    }
+    h4 {
+        margin-top: .9375rem;
+        text-shadow: 1px 1px 2px;
+        text-align: center;
+        font-size: 1.25rem;
+        color: gray;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        &:hover {
+            background-color: gray;
+            color: white;
+            transition: 2s;
+        }
+    }
+}
+
+.elemento3 {
+    background-image: url("https://images.unsplash.com/photo-1556641134-7c568bb74f1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .3125rem;
+    background-position: 0% 50%;
+    box-shadow: 5px 5px 2px white;
+    opacity: 0.7;
+    height: 12.5rem;
+    &:hover {
+        opacity: 1;
+        transition: 1s;
+        height: 31.25rem;
+    }
+    h2 {
+        margin-top: .9375rem;
+        color: $color-logo;
+        text-align: center;
+        font-size: 2em;
+        font-family: monoton;
+    }
+}
+/* iniciar sesion */
+.titulo-productos {
+    padding: .625rem;
+    text-align: center;
+    font-family: monoton;
+    color: $color-letra;
+    text-shadow: 5px 5px 3px;
+}
+
+.contenedor-registro {
+    .formulario-inicio {
+        @include diego (1.375rem, 1.25rem, 1.875rem, #5252ed);
+        box-shadow: 6px 6px 6px #8d8db2,
+            -6px -6px 6px #ffffff;
+    }
+    .boton-registro {
+        text-align: center;
+        button {
+            border-radius: 41px;
+            background: #008040;
+            box-shadow: 3px 3px 1px #00572c,
+                -3px -3px 1px #00a954;
+            font-family: monoton;
+            display: flex;
+            justify-content: center;
+            padding: .3125rem .9375rem;
+            border: .1875rem;
+            margin: .9375rem 0;
+            &:hover {
+                background-color: $color-hover-boton;
+            }
+        }
+    }
+}
+
+.card {
+    border-radius: 22px;
+    background: #5252ed;
+    box-shadow: 6px 6px 6px #8d8db2,
+        -6px -6px 6px #ffffff;
+    padding: 1.25rem;
+    padding-top: 1.875rem;
+}
+.descripcion {
+    p {
+        color: $color-letra;
+        padding: .9375rem;
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+            transition: 1s;
+        }
+    }
+}
+
+/* registrarse */
+
+.clase-grid {
+    padding: 1.25rem;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    height: 43.75rem;
+    justify-content: center;
+    align-items: left;
+    gap: .9375rem;
+}
+
+.registro {
+    h2 {
+        text-shadow: 5px 5px 3px;
+        text-align: center;
+        font-family: monoton;
+        margin-top: .9375rem;
+    }
+}
+
+.grid-registrarse {
+    gap: 15px;
+    background-color: rgba(255, 166, 0, 0.424);
+    display: grid;
+    grid-template-columns: 2 fr;
+    font-size: .625rem;
+    border: 1px solid black;
+    padding: 10px;
+    span {
+        font-family: monoton;
+    }
+    input {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .boton-sus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h4 {
+            font-family: monoton;
+            font-size: 1.25rem;
+        }
+        button {
+            border-radius: 41px;
+            background: #008040;
+            box-shadow: 3px 3px 1px #00572c,
+                -3px -3px 1px #00a954;
+            font-family: monoton;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: .3125rem .9375rem;
+            border: .1875rem;
+            margin: .9375rem 0;
+            &:hover {
+                background-color: $color-hover-boton;
+            }
+        }
+    }
+}
+.banner-registro {
+    background-image: url(../assets/img/banner.jpg);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    h2 {
+        font-family: monoton;
+        padding: .9375rem;
+        text-align: center;
+    }
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: gray;
+        margin: .9375rem;
+        &:hover {
+            background-color: gray 0.9;
+            color: white;
+            transition: 1s;
+        }
+    }
+}
+.registro {
+    h2 {
+        color: $color-logo;
+        text-shadow: none;
+    }
+}
+/* productos */
+.titulo-productos {
+    color: $color-logo;
+    text-shadow: none;
+}
+
+.descripcion {
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+        transition: 1s;
+    }
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .625rem;
+    margin: .625rem;
+}
+
+.producto1 {
+    background-image: url("https://images.unsplash.com/photo-1675958986180-52e8e6fe1539?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80");
+    @include hongo(cover, no-repeat, 100%, 100%, 18.75rem, 15%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        color: $color-logo;
+        font-family: monoton;
+    }
+
+    button {
+        border-radius: 41px;
+        background: #008040; 
+        box-shadow: 3px 3px 1px #00572c,
+                    -3px -3px 1px #00a954;
+        font-family: monoton;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: .3125rem .9375rem;
+        border: .1875rem;
+        margin: .9375rem 0;
+
+        &:hover {
+            background-color: $color-hover-boton;
+        }
+    }
+}
+
+.producto3 {
+    background-image: url("https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80");
+    @extend .producto1
+}
+
+.producto2 {
+    background-image: url("https://images.unsplash.com/photo-1593449917395-99c124e284ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1hcmlodWFuYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    @extend .producto1
+}
+
+.producto4 {
+    background-image: url("https://images.unsplash.com/photo-1605039982749-c2fe1dd2a588?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+    @extend .producto1
+}
+
+.grid-nosotros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin: 1.25rem;
+
+
+}
+
+.somos {
+    background-image: url("https://media.istockphoto.com/id/1444674627/es/foto/grupo-de-j%C3%B3venes-activistas-anim%C3%A1ndose-mutuamente-a-expresar-sus-preocupaciones-sobre-el.webp?s=2048x2048&w=is&k=20&c=HnE3tEhyG2QLhNSXC4ZJxPbf3bvpdwFZq75inoMo-o0=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    width: 100%;
+    height: 21.875rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+        text-align: center;
+        font-family: monoton;
+        font-size: 2em;
+        color: $color-logo;
+        margin-top: .9375rem;
+    }
+
+    p {
+        padding: .625rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 1em;
+        color: $color-letra;
+
+        &:hover {
+            color: white;
+            transition: 1s;
+        }
+    }
+}
+
+.vision {
+    background-image: url("https://images.unsplash.com/photo-1427348693976-99e4aca06bb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+    @extend .somos;
+}
+
+.mision {
+    background-image: url("https://media.istockphoto.com/id/1266949703/es/foto/icono-empresario-con-concepto-de-liderazgo.webp?s=2048x2048&w=is&k=20&c=EUnJmMPMg_GaGD4WwhiLTObugJCBHb084QN3nphhwUE=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    ;
+
+    h2 {
+        margin-top: .9375rem;
+        text-align: center;
+        font-family: monoton;
+        font-size: 2em;
+        color: $color-logo;
+    }
+
+    p {
+        text-align: center;
+        color: $color-letra;
+
+        &:hover {
+            color: white;
+            transition: 1s;
+        }
+    }
+}

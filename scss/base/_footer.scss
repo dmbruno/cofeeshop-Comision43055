@@ -1,0 +1,43 @@
+.contenedorFooter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    background-color: $color-footer-nav;  
+    h3{
+        font-size: .9375rem;
+        color: $color-letra;
+        font-family: monoton;
+    }
+    p{
+        display: flex;
+        font-size: .9375rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.bsas {
+    width: 100%;
+    height: 6.25rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border-right: .125rem solid white;
+    text-align: center;
+}
+
+/* extends */
+
+.salta {
+    @extend .bsas;
+}
+.contacto {
+    @extend .salta;
+}
+.mushrom {
+    @extend .salta;
+}
+
+
+
+

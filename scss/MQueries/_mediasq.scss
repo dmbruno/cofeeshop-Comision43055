@@ -1,0 +1,262 @@
+@media(max-width: 64rem) {
+
+    body {
+        background-color: rgba(173, 216, 230, 0.798);
+    }
+
+    .grid-index {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .logo h1 {
+        text-align: center;
+        font-size: 1.875rem;
+    }
+
+    .elemento1 {
+        grid-column: 1 / 2;
+        height: 25rem;
+    }
+
+    .elemento2 {
+        grid-column: 1 / 2;
+        height: 25rem;
+    }
+
+    .elemento3 {
+        grid-column: 1 / 2;
+        height: 25rem;
+    }
+
+    .contenedorBoton {
+        margin: .625rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 46.0625rem) {
+    .conteiner {
+        background-color: $color-footer-nav;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+    .navbar {
+        font-size: .625rem;
+        li {
+            a {
+                color: $color-letra;
+            }
+        }
+    } 
+
+    .home {
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        margin-left: 0;
+
+    }
+
+    .home2 {
+        display: flex;
+        align-items: center;
+        margin: 15px;
+
+        li {
+            a {
+                color: white;
+            }
+        }
+    }
+
+
+    .logo {
+        h1 {
+            font-size: .9375rem;
+        }
+    }
+
+    .contenedorFooter {
+        div {
+            h3 {
+                font-size: .625rem;
+                margin-top: .3125rem;
+            }
+
+            p {
+                font-size: .625rem;
+            }
+
+            img {
+                width: 1.875rem;
+                height: 1.875rem;
+            }
+        }
+    }
+
+    .direcciones {
+        ul {
+            li {
+                font-size: .625rem;
+            }
+        }
+    }
+
+    .elemento1 .elemento2 .elemento3 {
+        background-image: cover;
+    }
+
+    .grid-productos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .625rem;
+        margin: .625rem;
+    }
+
+    .grid-nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        display: block;
+
+        .somos {
+            grid-template-columns: 1 / 4;
+            height: 18.75rem;
+
+        }
+
+        .mision {
+            grid-template-columns: 1 / 4;
+            height: 18.75rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+        }
+
+        .vision {
+            grid-template-columns: 1 / 4;
+            height: 18.75rem;
+
+        }
+    }
+}
+
+@media(max-width: 33.6875rem) {
+
+    .grid-productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .625rem;
+        margin: .625rem;
+    }
+
+    .banner-registro {
+        display: none;
+
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .formulario-inicio {
+        width: 100%;
+
+    }
+
+
+}
+
+@media(max-width: 25.125rem) {
+
+    .grid-productos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .625rem;
+        margin: .625rem;
+    }
+
+    .somos {
+        h2 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            font-size: .625rem;
+        }
+    }
+
+    .mision {
+        h2 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            font-size: .625rem;
+        }
+    }
+
+    .vision {
+        h2 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            font-size: .625rem;
+        }
+    }
+
+.direcciones{
+    ul{
+        li{
+            font-size: .9375rem;
+        }
+    }
+}
+
+.conteiner {
+    background-color: $color-footer-nav;
+    display: flex;
+    justify-content: center;
+    
+}
+.clase-grid{
+    justify-content: center;
+    margin-left: 1.875rem;
+}
+
+.contenedorFooter{
+    display: grid;
+    grid-template-columns: 1fr;
+    .bsas{
+        border-bottom: .0625rem solid white;
+        h3{
+            color: $color-letra-blanca;
+        }
+        p{
+            color: $color-letra-blanca;
+        }
+    }
+
+}
+.navbar{
+    li{
+        a{
+            color: $color-letra-blanca;
+        }
+    }
+}
+
+}
