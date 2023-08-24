@@ -532,7 +532,16 @@ body {
   .banner {
     display: none; }
   .formulario-inicio {
-    width: 100%; } }
+    width: 100%; }
+  .contenedorFooter {
+    display: grid;
+    grid-template-columns: 1fr; }
+    .contenedorFooter .bsas, .contenedorFooter .salta, .contenedorFooter .contacto, .contenedorFooter .mushrom {
+      border-bottom: .0625rem solid white; }
+      .contenedorFooter .bsas h3, .contenedorFooter .salta h3, .contenedorFooter .contacto h3, .contenedorFooter .mushrom h3 {
+        color: white; }
+      .contenedorFooter .bsas p, .contenedorFooter .salta p, .contenedorFooter .contacto p, .contenedorFooter .mushrom p {
+        color: white; } }
 
 @media (max-width: 25.125rem) {
   .grid-productos {

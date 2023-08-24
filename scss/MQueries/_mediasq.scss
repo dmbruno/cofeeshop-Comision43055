@@ -175,8 +175,19 @@
         width: 100%;
 
     }
-
-
+    .contenedorFooter{
+        display: grid;
+        grid-template-columns: 1fr;
+        .bsas{
+            border-bottom: .0625rem solid white;
+            h3{
+                color: $color-letra-blanca;
+            }
+            p{
+                color: $color-letra-blanca;
+            }
+        }
+    }
 }
 
 @media(max-width: 25.125rem) {
