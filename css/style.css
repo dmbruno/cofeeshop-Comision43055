@@ -580,4 +580,6 @@ body {
       .contenedorFooter .bsas p, .contenedorFooter .salta p, .contenedorFooter .contacto p, .contenedorFooter .mushrom p {
         color: white; }
   .navbar li a {
-    color: white; } }
+    color: white; }
+  .elemento2 h4 {
+    font-size: 13px; } }
