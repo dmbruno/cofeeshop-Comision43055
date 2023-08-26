@@ -61,13 +61,13 @@ body {
   color: orange;
   margin-top: .9375rem; }
 
-.grid-index {
-  justify-content: center;
+.contenedor .grid-index {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   row-gap: 10px; }
-  .grid-index .elemento1 {
+  .contenedor .grid-index .elemento1 {
     background-image: url("https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
     grid-column-start: 1;
     grid-column-end: 4;
@@ -79,11 +79,11 @@ body {
     box-shadow: 5px 5px 2px white;
     opacity: 0.7;
     height: 12.5rem; }
-    .grid-index .elemento1:hover {
+    .contenedor .grid-index .elemento1:hover {
       opacity: 1;
       transition: 1s;
       height: 31.25rem; }
-    .grid-index .elemento1 h2 {
+    .contenedor .grid-index .elemento1 h2 {
       margin-top: .9375rem;
       padding-top: 0%;
       font-size: 2.1875rem;
@@ -91,26 +91,26 @@ body {
       color: orange;
       font-family: monoton;
       text-shadow: 1px 1px 2px; }
-    .grid-index .elemento1 div ul li {
+    .contenedor .grid-index .elemento1 div ul li {
       list-style: none;
       color: orange; }
 
-.tiendas {
+.contenedor .tiendas {
   display: flex;
   width: 100%;
   justify-content: space-between;
   flex-direction: column; }
-  .tiendas ul {
+  .contenedor .tiendas ul {
     display: flex;
     gap: 15px;
     justify-self: flex-end;
     font-size: 1.25rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-.contenedorBoton {
+.contenedor .contenedorBoton {
   display: flex;
   justify-content: center; }
-  .contenedorBoton button {
+  .contenedor .contenedorBoton button {
     border-radius: 41px;
     background: #008040;
     box-shadow: 3px 3px 1px #00572c, -3px -3px 1px #00a954;
@@ -120,11 +120,11 @@ body {
     padding: .3125rem .9375rem;
     border: .1875rem;
     margin: .9375rem 0; }
-    .contenedorBoton button:hover {
+    .contenedor .contenedorBoton button:hover {
       cursor: pointer;
       background-color: rgba(255, 166, 0, 0.824); }
 
-.elemento2 {
+.contenedor .elemento2 {
   background-image: url("https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNob3B8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
   box-shadow: 5px 5px 2px white;
   grid-column-start: 1;
@@ -134,30 +134,30 @@ body {
   border-radius: .3125rem;
   opacity: 0.7;
   height: 12.5rem; }
-  .elemento2:hover {
+  .contenedor .elemento2:hover {
     opacity: 1;
     transition: 1s;
     height: 31.25rem; }
-  .elemento2 h2 {
+  .contenedor .elemento2 h2 {
     margin-top: .9375rem;
     text-align: center;
     color: orange;
     font-size: 2em;
     font-family: monoton;
     text-shadow: 1px 1px 2px; }
-  .elemento2 h4 {
+  .contenedor .elemento2 h4 {
     margin-top: .9375rem;
     text-shadow: 1px 1px 2px;
     text-align: center;
     font-size: 1.25rem;
     color: gray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-    .elemento2 h4:hover {
+    .contenedor .elemento2 h4:hover {
       background-color: gray;
       color: white;
       transition: 2s; }
 
-.elemento3 {
+.contenedor .elemento3 {
   background-image: url("https://images.unsplash.com/photo-1556641134-7c568bb74f1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
   grid-column-start: 1;
   grid-column-end: 4;
@@ -168,11 +168,11 @@ body {
   box-shadow: 5px 5px 2px white;
   opacity: 0.7;
   height: 12.5rem; }
-  .elemento3:hover {
+  .contenedor .elemento3:hover {
     opacity: 1;
     transition: 1s;
     height: 31.25rem; }
-  .elemento3 h2 {
+  .contenedor .elemento3 h2 {
     margin-top: .9375rem;
     color: orange;
     text-align: center;
@@ -581,5 +581,33 @@ body {
         color: white; }
   .navbar li a {
     color: white; }
-  .elemento2 h4 {
-    font-size: 13px; } }
+  .contenedor .grid-index .elemento1 {
+    opacity: 1; }
+    .contenedor .grid-index .elemento1:hover {
+      opacity: 1;
+      transition: 1s;
+      height: 12.5rem; }
+    .contenedor .grid-index .elemento1 h2 {
+      font-size: 1.5em; }
+  .contenedor .grid-index .elemento2 {
+    opacity: 1; }
+    .contenedor .grid-index .elemento2 h4 {
+      font-size: .9375rem; }
+      .contenedor .grid-index .elemento2 h4:hover {
+        background-color: rgba(128, 128, 128, 0);
+        color: white;
+        transition: 1.5s; }
+    .contenedor .grid-index .elemento2 h2 {
+      font-size: 1.5em; }
+    .contenedor .grid-index .elemento2:hover {
+      opacity: 1;
+      transition: 1s;
+      height: 12.5rem; }
+  .contenedor .grid-index .elemento3 {
+    opacity: 1; }
+    .contenedor .grid-index .elemento3:hover {
+      opacity: 1;
+      transition: 1s;
+      height: 12.5rem; }
+    .contenedor .grid-index .elemento3 h2 {
+      font-size: 1.5em; } }
