@@ -253,6 +253,12 @@ body {
     font-family: monoton; }
   .grid-registrarse input {
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .grid-registrarse span {
+    font-size: 1.25rem;
+    text-decoration: underline; }
+  .grid-registrarse input {
+    font-size: .9375rem;
+    margin-left: .625rem; }
   .grid-registrarse .boton-sus {
     display: flex;
     align-items: center;
