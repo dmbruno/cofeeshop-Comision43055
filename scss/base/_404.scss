@@ -1,0 +1,24 @@
+.error{
+    background-color: whitesmoke;
+    text-align: center;
+    .parrafo{
+        font-family: monoton;
+        font-size: 5rem;
+        color: orange;
+    }
+    h1{
+        font-family: monoton;
+        font-size: 7.5rem;
+        color: $color-letra;
+        margin-bottom: 0;
+    }
+    .pagina{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: orange;
+        line-height: 2;
+        font-size: 5rem;
+    }
+    a{
+        margin-bottom: 31.25rem;
+    }
+}

@@ -1,5 +1,4 @@
 body {
-
     background-image: url(../assets/img/fondo-trama.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,8 +84,13 @@ body {
     .contenedorBoton {
         display: flex;
         justify-content: center;
+        a{
+            list-style: none;
+            color: white;
+            text-decoration: none;
+        }
 
-        button {
+        .button {
             border-radius: 41px;
             background: #008040;
             box-shadow: 3px 3px 1px #00572c,
@@ -189,10 +193,14 @@ body {
             -6px -6px 6px #ffffff;
     }
 
-    .boton-registro {
+    .boton-registro{
         text-align: center;
+        a{
+            text-decoration: none;
+            color: white;
+        }
 
-        button {
+        .button {
             border-radius: 41px;
             background: #008040;
             box-shadow: 3px 3px 1px #00572c,
@@ -203,6 +211,7 @@ body {
             padding: .3125rem .9375rem;
             border: .1875rem;
             margin: .9375rem 0;
+            
 
             &:hover {
                 background-color: $color-hover-boton;
@@ -287,13 +296,16 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        a{
+            text-decoration: none;
+        }
 
         h4 {
             font-family: monoton;
             font-size: 1.25rem;
         }
 
-        button {
+        .button {
             border-radius: 41px;
             background: #008040;
             box-shadow: 3px 3px 1px #00572c,
@@ -305,6 +317,7 @@ body {
             padding: .3125rem .9375rem;
             border: .1875rem;
             margin: .9375rem 0;
+            
 
             &:hover {
                 background-color: $color-hover-boton;
@@ -386,8 +399,11 @@ body {
         color: $color-logo;
         font-family: monoton;
     }
+    a{
+        text-decoration: none;
+    }
 
-    button {
+    .button {
         border-radius: 41px;
         background: #008040;
         box-shadow: 3px 3px 1px #00572c,
@@ -408,7 +424,8 @@ body {
 
 .producto3 {
     background-image: url("https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80");
-    @extend .producto1
+    @extend .producto1 
+    
 }
 
 .producto2 {

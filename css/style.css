@@ -110,7 +110,11 @@ body {
 .contenedor .contenedorBoton {
   display: flex;
   justify-content: center; }
-  .contenedor .contenedorBoton button {
+  .contenedor .contenedorBoton a {
+    list-style: none;
+    color: white;
+    text-decoration: none; }
+  .contenedor .contenedorBoton .button {
     border-radius: 41px;
     background: #008040;
     box-shadow: 3px 3px 1px #00572c, -3px -3px 1px #00a954;
@@ -120,7 +124,7 @@ body {
     padding: .3125rem .9375rem;
     border: .1875rem;
     margin: .9375rem 0; }
-    .contenedor .contenedorBoton button:hover {
+    .contenedor .contenedorBoton .button:hover {
       cursor: pointer;
       background-color: rgba(255, 166, 0, 0.824); }
 
@@ -196,7 +200,10 @@ body {
 
 .contenedor-registro .boton-registro {
   text-align: center; }
-  .contenedor-registro .boton-registro button {
+  .contenedor-registro .boton-registro a {
+    text-decoration: none;
+    color: white; }
+  .contenedor-registro .boton-registro .button {
     border-radius: 41px;
     background: #008040;
     box-shadow: 3px 3px 1px #00572c, -3px -3px 1px #00a954;
@@ -206,7 +213,7 @@ body {
     padding: .3125rem .9375rem;
     border: .1875rem;
     margin: .9375rem 0; }
-    .contenedor-registro .boton-registro button:hover {
+    .contenedor-registro .boton-registro .button:hover {
       background-color: rgba(255, 166, 0, 0.824); }
 
 .card {
@@ -263,10 +270,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    .grid-registrarse .boton-sus a {
+      text-decoration: none; }
     .grid-registrarse .boton-sus h4 {
       font-family: monoton;
       font-size: 1.25rem; }
-    .grid-registrarse .boton-sus button {
+    .grid-registrarse .boton-sus .button {
       border-radius: 41px;
       background: #008040;
       box-shadow: 3px 3px 1px #00572c, -3px -3px 1px #00a954;
@@ -277,7 +286,7 @@ body {
       padding: .3125rem .9375rem;
       border: .1875rem;
       margin: .9375rem 0; }
-      .grid-registrarse .boton-sus button:hover {
+      .grid-registrarse .boton-sus .button:hover {
         background-color: rgba(255, 166, 0, 0.824); }
 
 .banner-registro {
@@ -340,7 +349,9 @@ body {
   .producto1 h3, .producto3 h3, .producto2 h3, .producto4 h3 {
     color: orange;
     font-family: monoton; }
-  .producto1 button, .producto3 button, .producto2 button, .producto4 button {
+  .producto1 a, .producto3 a, .producto2 a, .producto4 a {
+    text-decoration: none; }
+  .producto1 .button, .producto3 .button, .producto2 .button, .producto4 .button {
     border-radius: 41px;
     background: #008040;
     box-shadow: 3px 3px 1px #00572c, -3px -3px 1px #00a954;
@@ -351,7 +362,7 @@ body {
     padding: .3125rem .9375rem;
     border: .1875rem;
     margin: .9375rem 0; }
-    .producto1 button:hover, .producto3 button:hover, .producto2 button:hover, .producto4 button:hover {
+    .producto1 .button:hover, .producto3 .button:hover, .producto2 .button:hover, .producto4 .button:hover {
       background-color: rgba(255, 166, 0, 0.824); }
 
 .producto3 {
@@ -617,3 +628,23 @@ body {
       height: 12.5rem; }
     .contenedor .grid-index .elemento3 h2 {
       font-size: 1.5em; } }
+
+.error {
+  background-color: whitesmoke;
+  text-align: center; }
+  .error .parrafo {
+    font-family: monoton;
+    font-size: 5rem;
+    color: orange; }
+  .error h1 {
+    font-family: monoton;
+    font-size: 7.5rem;
+    color: rgba(0, 0, 0, 0.843);
+    margin-bottom: 0; }
+  .error .pagina {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+    line-height: 2;
+    font-size: 5rem; }
+  .error a {
+    margin-bottom: 31.25rem; }
